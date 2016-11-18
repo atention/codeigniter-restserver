@@ -202,3 +202,18 @@ Pull Requests are the best way to fix bugs or add features. I know loads of you 
 contribute if you have improvements to be made and I'll keep releasing versions over time.
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/chriskacerguis/codeigniter-restserver/master/LICENSE)
+
+## Update
+
+    Open your fork on GitHub.
+    Click on Pull Requests.
+    Click on New Pull Request. By default, GitHub will compare the original with your fork, and there shouldn't be anything to compare if you didn't make any changes.
+    Click switching the base if you see that link. Otherwise, manually set the base fork drop down to your fork, and the head fork to the upstream. Now GitHub will compare your fork with the original, and you should see all the latest changes. enter image description here
+    Create pull request and assign a predictable name to your pull request (e.g., Update from original).
+    Scroll down to Merge pull request, but don't click anything yet.
+
+Now you have three options, but each will lead to a less-than-clean commit history.
+
+    The default will create an ugly merge commit.
+    If you click the dropdown and choose "Squash and merge", all intervening commits will be squashed into one. This is most often something you don't want.
+    If you click Rebase and merge, all commits will be made "with" you, the original PRs will link to your PR, and GitHub will display This branch is X commits ahead, Y commits behind <original fork>.
